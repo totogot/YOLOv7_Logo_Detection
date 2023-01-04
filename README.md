@@ -16,7 +16,7 @@ $ git clone https://github.com/totogot/YOLOv7_Logo_Detection.git
 
 Next set up a virtual environment for installing all package requirements into
 ```
-$ cd C:\Users\jdoe\Documents\PersonalProjects\Logo_Detection
+$ cd C:\Users\jdoe\Documents\PersonalProjects\YOLOv7_Logo_Detection
 $ python -m venv venv
 ```
 

@@ -34,13 +34,17 @@ This last command will install all dependencies outlined in the setup.cfg file.
 Note: ipykernel has been included to enable the main.ipynb to be run also and for relevant visualisations to be outputted also.
 
 
+## Running model training and inference
+All workings and accompanying commentary around custom training and then subsequent inference can be found in the "main.ipynb" file. 
+
+Note: the final model weights have not been saved as part of this GitHub repo due to limited storage
+
+
 ## Image data 
 
 This project was built using a custom made dataset with 100 images containing the Petronas company logo, with fine-grained (annotated, including bounding boxes) labelled data obtained through manual tagging myself. 
 
-It is worth noting that this volume of data is unlikely to lead to a high degree of accuracy, and in the real world you would anticipate providing a far larged dataset during training in order to develop a robust and accurate model for deployment - e.g. Ultralytics recommend >=1500 images per class (https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results). 
-
-However, for the purpose of showing an end to end project, and to reduce the time and compuational power required for training, I deemed 50 images as sufficient.
+It is worth noting that this volume of data is unlikely to lead to a high degree of accuracy, and in the real world you would anticipate providing a far larged dataset during training in order to develop a robust and accurate model for deployment - i.e. >1500 images per class. However, for the purpose of showing an end to end project, and to reduce the time and compuational power required for training, I deemed 100 images as sufficient.
 
 
 ## Labelling data
@@ -56,3 +60,9 @@ $ label-studio start
 This will install the LabelStudio requirements and then launch the programme in a new browser window. From there you should set up your tagging task, following the instructions found here (https://labelstud.io/guide/index.html#Quick-start). Once you have completed your tagging task, you can export the annotated dataset (in one of many different formats). 
 
 For the purpose of this project, and to ensure that only one single annotation file is created, I opted for the COCO JSON format
+
+
+# YOLOv7 repository
+The official YOLOv7 repo by Wong Kin Yiu (https://github.com/WongKinYiu/yolov7) has been cloned into this project (folder "yolov7") in order to provide a clear repeatable example of my project repository. However, for full details on usage and licensing I recommend looking at the repo yourself. Additionally, I do not claim any credit for the material that sits within this folder.
+
+Further to avoid duplication of repositories, if you are following along with the guidance in this projects "main.ipynb", I recommend first deleting the yolov7 repo folder, to avoid duplication

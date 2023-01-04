@@ -62,7 +62,7 @@ This will install the LabelStudio requirements and then launch the programme in 
 For the purpose of this project, and to ensure that only one single annotation file is created, I opted for the COCO JSON format
 
 
-# YOLOv7 repository
+## Cloning official YOLOv7 repository
 The official YOLOv7 repo by Wong Kin Yiu (https://github.com/WongKinYiu/yolov7) has been cloned into this project (folder "yolov7") in order to provide a clear repeatable example of my project repository. However, for full details on usage and licensing I recommend looking at the repo yourself. Additionally, I do not claim any credit for the material that sits within this folder.
 
 Further to avoid duplication of repositories, if you are following along with the guidance in this projects "main.ipynb", I recommend first deleting the yolov7 repo folder, to avoid duplication

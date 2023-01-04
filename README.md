@@ -40,6 +40,12 @@ All workings and accompanying commentary around custom training and then subsequ
 Note: the final model weights have not been saved as part of this GitHub repo due to limited storage
 
 
+## Cloning official YOLOv7 repository
+The official YOLOv7 repo by Wong Kin Yiu (https://github.com/WongKinYiu/yolov7) has been cloned into this project (folder "yolov7") in order to provide a clear repeatable example of my project repository. However, for full details on usage and licensing I recommend looking at the repo yourself. Additionally, I do not claim any credit for the material that sits within this folder.
+
+Further to avoid duplication of repositories, if you are following along with the guidance in this projects "main.ipynb", I recommend first deleting the yolov7 repo folder, to avoid duplication
+
+
 ## Image data 
 
 This project was built using a custom made dataset with 100 images containing the Petronas company logo, with fine-grained (annotated, including bounding boxes) labelled data obtained through manual tagging myself. 
@@ -60,9 +66,3 @@ $ label-studio start
 This will install the LabelStudio requirements and then launch the programme in a new browser window. From there you should set up your tagging task, following the instructions found here (https://labelstud.io/guide/index.html#Quick-start). Once you have completed your tagging task, you can export the annotated dataset (in one of many different formats). 
 
 For the purpose of this project, and to ensure that only one single annotation file is created, I opted for the COCO JSON format
-
-
-## Cloning official YOLOv7 repository
-The official YOLOv7 repo by Wong Kin Yiu (https://github.com/WongKinYiu/yolov7) has been cloned into this project (folder "yolov7") in order to provide a clear repeatable example of my project repository. However, for full details on usage and licensing I recommend looking at the repo yourself. Additionally, I do not claim any credit for the material that sits within this folder.
-
-Further to avoid duplication of repositories, if you are following along with the guidance in this projects "main.ipynb", I recommend first deleting the yolov7 repo folder, to avoid duplication
